@@ -1,0 +1,28 @@
+PODS:
+  - Alamofire (4.8.2)
+  - FittedSheets (1.4.4)
+  - IQKeyboardManagerSwift (6.4.0)
+  - SVProgressHUD (2.2.5)
+
+DEPENDENCIES:
+  - Alamofire
+  - FittedSheets
+  - IQKeyboardManagerSwift
+  - SVProgressHUD
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - Alamofire
+    - FittedSheets
+    - IQKeyboardManagerSwift
+    - SVProgressHUD
+
+SPEC CHECKSUMS:
+  Alamofire: ae5c501addb7afdbb13687d7f2f722c78734c2d3
+  FittedSheets: f56b96c7bd81585d9a183c2a06abe176fa0b55db
+  IQKeyboardManagerSwift: ed9b04ee0e3067ffba543283462d619f944b05e5
+  SVProgressHUD: 1428aafac632c1f86f62aa4243ec12008d7a51d6
+
+PODFILE CHECKSUM: 3e0a9e29de6f7927a0f99789142bd3983d3940a5
+
+COCOAPODS: 1.6.0

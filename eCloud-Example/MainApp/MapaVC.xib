@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MapaVC" customModule="eCloud_Example" customModuleProvider="target">
+            <connections>
+                <outlet property="labelCoords" destination="wVF-mL-8LH" id="3TA-rX-H4I"/>
+                <outlet property="mapView" destination="vzc-6m-sBb" id="71S-Ow-knc"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="583"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="vzc-6m-sBb">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="583"/>
+                </mapView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ego-yY-AHs">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="65"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Coords." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wVF-mL-8LH">
+                            <rect key="frame" x="42" y="20" width="330" height="25"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="25" id="NBx-Oc-6sd"/>
+                                <constraint firstAttribute="width" constant="330" id="P5d-z4-186"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="18"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="wVF-mL-8LH" firstAttribute="centerX" secondItem="Ego-yY-AHs" secondAttribute="centerX" id="7NF-ES-8nh"/>
+                        <constraint firstAttribute="height" constant="65" id="OyE-tQ-nbN"/>
+                        <constraint firstItem="wVF-mL-8LH" firstAttribute="centerY" secondItem="Ego-yY-AHs" secondAttribute="centerY" id="qMF-Xq-giT"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="vzc-6m-sBb" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="2jV-sE-eWn"/>
+                <constraint firstItem="vzc-6m-sBb" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="8sJ-jQ-zsU"/>
+                <constraint firstItem="Ego-yY-AHs" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="AIJ-DX-Mhf"/>
+                <constraint firstItem="Ego-yY-AHs" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="GIM-c6-KcC"/>
+                <constraint firstItem="Ego-yY-AHs" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="HfV-jh-y9g"/>
+                <constraint firstAttribute="bottom" secondItem="vzc-6m-sBb" secondAttribute="bottom" id="KcV-AH-1Xu"/>
+                <constraint firstItem="vzc-6m-sBb" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="wgY-55-LbB"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <point key="canvasLocation" x="131.8840579710145" y="258.14732142857144"/>
+        </view>
+    </objects>
+</document>
